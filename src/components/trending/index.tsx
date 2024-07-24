@@ -22,7 +22,7 @@ export function TrendingFoods() {
     useEffect(() => {
         // função asincrona para pegar dados da api
         async function getFoods() {
-            const response = await fetch("http://192.168.0.111:3000/foods")
+            const response = await fetch("http://192.168.101.162:3000/foods")
             const data = await response.json()  // transformando dados em json
             setFoods(data);                     // setando as comidas na useState
         }

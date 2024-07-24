@@ -8,6 +8,8 @@ import { Banner } from "../components/banner";
 import { Search } from "../components/search";
 import { Section } from "../components/section";
 import { TrendingFoods } from "../components/trending";
+import { Restaurants } from "../components/restaurants";
+import { VerticalListRestaurant } from "../components/list";
 
 const statusBarHeight = Constants.statusBarHeight
 
@@ -38,10 +40,24 @@ export default function Index() {
       label="Veja mais..."
       action={ () => console.log("Veja mais clicado")}
       />
-
       <TrendingFoods/>
 
-      
+      <Section
+      name="Famosos no FlashFood"
+      size="text-2xl"
+      label="Veja todos..."
+      action={ () => console.log("Veja todos clicado")}
+      />
+      <Restaurants />
+
+      <Section
+      name="Restaurantes"
+      label=""
+      size="text-2xl"
+      action={ () => console.log("Todos os restaurantes")}
+      />
+      <VerticalListRestaurant/>
+
     </ScrollView>
   );
 }

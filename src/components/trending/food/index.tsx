@@ -16,12 +16,25 @@ export function HorizontalCardFood({ food }: { food: FoodProps}) {
           <Text className='text-white text-sm'>{food.rating}</Text>
         </View>
 
-        <Text className='absolute bottom-8 px-2 flex flex-row bg-slate-800 text-white gap-1 rounded-full'>{food.name}
+
+        <Text className='absolute bottom-12 px-2 flex flex-row bg-slate-800/80 text-white gap-1 rounded-full'>{food.name}
         </Text>
 
-        <Text className='text-green-800 font-semibold flex flex-row'>
-          R$ {food.price}
-        </Text>
+        <View className='flex flex-row justify-between items-center mt-2'>
+          <Text className='text-green-800 font-semibold'>
+            R$ {food.price}
+          </Text>
+
+          <View className='items-end'>
+            <Text className='text-xs font-thin'>
+              {food.time}
+            </Text>
+
+            <Text className='text-green-800 text-xs'>
+              R$ {food.delivery}
+            </Text>
+          </View>
+        </View>
 
     </Pressable>
   )
