@@ -14,7 +14,7 @@ export function Header() {
             <View className="flex flex-col items-center justify-center">
                 <Text className="text-center text-sm">Localização</Text>
                 
-                <View className="flex-row items-center justify-center">
+                <View className="flex-row items-center justify-between gap-1">
                     <Ionicons name="navigate" size={15} color="darkred"></Ionicons>
                     <Text className="text-lg font-bold">Rio de Janeiro</Text>
                 </View>

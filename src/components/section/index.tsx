@@ -9,9 +9,9 @@ interface Props{
 
 // Componente dinamico
 
-export function Rated({name, size, label, action}: Props) {
+export function Section({name, size, label, action}: Props) {
     return (
-        <View className="w-full mt-3 mx-6 flex flex-row items-center justify-between">
+        <View className="w-full mt-5 mx-6 flex flex-row items-center justify-between">
             <Text
             className={`font-bold ${size} self-start`}
             > {name} </Text>
